@@ -9,7 +9,7 @@ import { Point } from "ol/geom.js";
 import { getVectorContext } from "ol/render.js";
 import { defaults as defaultInteractions } from "ol/interaction.js";
 
-const BACKEND_URL = https://github.com/tomyamGTX/drone-tracker;
+const BACKEND_URL = https://stingray-app-sra4c.ondigitalocean.app/;
 
 const tileLayer = new TileLayer({
   source: new OSM(),
