@@ -9,7 +9,12 @@ import { Point } from "ol/geom.js";
 import { getVectorContext } from "ol/render.js";
 import { defaults as defaultInteractions } from "ol/interaction.js";
 
-const BACKEND_URL = https://stingray-app-sra4c.ondigitalocean.app/;
+const BACKEND_URL = process.env.BACKEND_URL;
+
+fetch(`${backendUrl}/api/data`)
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error fetching data:', error));
 
 const tileLayer = new TileLayer({
   source: new OSM(),
